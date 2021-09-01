@@ -1,0 +1,199 @@
+{
+  "name": "Tze Sien Choo",
+  "landing": {
+    "title": "Hi, I'm Tze Sien Choo",
+    "subtitles": [
+      "Junior Full-stack developer 🌐",
+      "Know a litte but of UIUX 📱💻",
+      "Just getting started,keep learning 📈"
+    ],
+    "professionalDetails": [
+      {
+        "alt": "Tze Sien's LinkedIn",
+        "icon": "linkedin",
+        "link": "https://www.linkedin.com/in/chootzesien/"
+      },
+      {
+        "alt": "Tze Sien's Facebook",
+        "icon": "facebook",
+        "link": "https://www.facebook.com/tzesien.choo/"
+      },
+      {
+        "alt": "Tze Sien's Github",
+        "icon": "github",
+        "link": "https://github.com/tze-sien"
+      },
+      {
+        "alt": "Tze Sien's Email",
+        "icon": "gmail",
+        "link": "mailto:Tze Sien,chootzesien@gmail.com"
+      }
+    ]
+  },
+  "skills": {
+    "Languages known": [
+      "JavaScript",
+      "C++",
+      "Python",
+      "HTML5",
+      "CSS3",
+      "TypeScript",
+      "PHP"
+    ],
+    "Frontend": ["React", "Redux", "Next.js", "Material-UI", "Bootstrap"],
+    "Backend, Database and Cloud": [
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Firebase"
+    ],
+    "Mobile": [
+      {
+        "alt": "React_Native",
+        "icon": "react",
+        "backgroundColor": "#424242"
+      },
+      "Expo"
+    ]
+  },
+  "projects": {
+    "baseURI": "https://api.github.com/repos/tze-sien/",
+    "repositories": [
+      "Coffee-Store-Online-Ordering-System",
+      "Portfolio",
+      "Web_RTC_Video_Call_App",
+      "b1_ecom",
+      "to-froAssetManagement",
+      "ForwardSchool_D37-JavaScript-billSeperator"
+    ]
+  },
+  "experience": {
+    "Work Experience": [
+      {
+        "organization": "Siang Electrical Sdn. Bhd.",
+        "role": "E-commerce Sales Support",
+        "type": "Full Time",
+        "startDate": "2017-05-25",
+        "endDate": "2017-11-30",
+        "city": "Jawi",
+        "state": "Penang",
+        "country": "Malaysia",
+        "url": "https://www.siang.com.my/",
+        "thumbnail": "/siang.png"
+      },
+      {
+        "organization": "Freelance",
+        "role": "Graphic Designer",
+        "type": "Freelance",
+        "startDate": "2019-01-25",
+        "endDate": "2020-01-30",
+        "city": "Bukit Mertajam",
+        "state": "Penang",
+        "country": "Malaysia",
+        "url": "https://tzesienchoo.blogspot.com/",
+        "thumbnail": "/profile.jpeg"
+      },
+      {
+        "organization": "DKW Global Sdn. Bhd.",
+        "role": "E-commerce site executive cum Graphic Designer",
+        "type": "Part-Time Remotely",
+        "startDate": "2019-02-25",
+        "endDate": "2021-08-15",
+        "city": "Bukit Mertajam",
+        "state": "Penang",
+        "country": "Malaysia",
+        "url": "",
+        "thumbnail": "/svo.png"
+      }
+    ]
+  },
+  "about": {
+    "description": "Aimed to become a full-stack developer and use the skill I have to help people. Mainly focusing on marketing digitalization.",
+    "picture": "/profile.jpeg",
+    "social": [
+      {
+        "alt": "tze-sien",
+        "icon": "instagram",
+        "link": "https://www.instagram.com/tze_sien/"
+      },
+      {
+        "alt": "+60124667445",
+        "icon": "whatsapp",
+        "link": "https://wa.me/60124667445"
+      },
+      {
+        "alt": "TzeSien#9301",
+        "icon": "discord",
+        "link": "https://discord.com/users/Tze%20Sien#9301"
+      }
+    ]
+  },
+  "career": {
+    "summary": "Full Stack Web Developer",
+    "goal": "Help business to generate higher profit through digitalization"
+  },
+  "mission": {
+    "content": "Find problem and solve with the use of technolgy, reduce redundant work."
+  },
+  "academic": {
+    "Schools": [
+      {
+        "organization": "TARUC Penang",
+        "role": "Diploma in Electronic Engineering",
+        "type": "",
+        "startDate": "2017-05-25",
+        "endDate": "2019-05-24",
+        "city": "Tanjong Tokong",
+        "state": "Penang",
+        "country": "Malaysia",
+        "url": "https://www.tarc.edu.my/",
+        "thumbnail": "/taruc.png"
+      },
+      {
+        "organization": "Utar Kampar",
+        "role": "Degree in Computer Science",
+        "type": "",
+        "startDate": "2019-05-25",
+        "endDate": "2020-05-24",
+        "city": "Kampar",
+        "state": "Perak",
+        "country": "Malaysia",
+        "url": "https://www.utar.edu.my/",
+        "thumbnail": "/utar.png"
+      },
+      {
+        "organization": "Forward School",
+        "role": "Applied Software Engineering",
+        "type": "",
+        "startDate": "2019-05-25",
+        "endDate": "2022-05-24",
+        "city": "Georgetown",
+        "state": "Penang",
+        "country": "Malaysia",
+        "url": "https://www.forwardschool.co/",
+        "thumbnail": "/forward_school.png"
+      }
+    ]
+  },
+
+  "theme": {
+    "light": {
+      "palette": {
+        "type": "light",
+        "background": {
+          "paper": "#fff",
+          "default": "#fafafa"
+        }
+      }
+    },
+    "dark": {
+      "palette": {
+        "type": "dark",
+        "background": {
+          "paper": "#303030",
+          "default": "#212121"
+        }
+      }
+    }
+  }
+}
