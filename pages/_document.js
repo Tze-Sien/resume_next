@@ -9,8 +9,8 @@ export default class MyDocument extends Document {
       <Html lang="en" style={{ overflowX: "hidden" }}>
         <Head>
           <meta charSet="utf-8" />
-          {/* PWA primary color */}
           <meta name="theme-color" content="black" />
+          <meta property="og:image" content="/cts.jpeg" />
           <meta name="description" content={`Portfolio of ${name}`} />
           <meta
             name="keywords"
