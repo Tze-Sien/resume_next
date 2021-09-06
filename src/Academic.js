@@ -3,9 +3,7 @@ import {
   Card,
   CardActionArea,
   CardHeader,
-  Fade,
   Grid,
-  Hidden,
   makeStyles,
   Typography,
   useMediaQuery,
@@ -14,7 +12,6 @@ import {
 import Image from "next/image";
 import { DateRange, LocationCity } from "@material-ui/icons";
 import { academic } from "../data.json";
-import { useEffect, useRef, useState } from "react";
 
 const useStyles = makeStyles((theme) => ({
   cont: {
@@ -68,17 +65,6 @@ export default function Experience() {
   const align = mdDown ? "center" : "flex-end";
   const textAlign = mdDown ? "center" : "right";
 
-  const [animate, setAnimate] = useState(false);
-  const animRef = useRef();
-
-  useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      if (entries.some((entry) => entry.isIntersecting)) setAnimate(true);
-    });
-    observer.observe(animRef.current);
-    return () => observer.unobserve(animRef.current);
-  }, []);
-
   return (
     <Grid
       direction="row"
@@ -92,18 +78,15 @@ export default function Experience() {
         <Typography variant="h2" gutterBottom align="center">
           Academics
         </Typography>
-        <Hidden mdDown>
-          <Fade in={animate} style={{ transitionDelay: "250ms" }}>
-            <div>
-              <Image
-                alt="academic"
-                src="/experience.svg"
-                width="996.46"
-                height="828.18"
-              />
-            </div>
-          </Fade>
-        </Hidden>
+
+        <div>
+          <Image
+            alt="academic"
+            src="/experience.svg"
+            width="996.46"
+            height="828.18"
+          />
+        </div>
       </Grid>
       <Grid
         container
@@ -142,44 +125,39 @@ export default function Experience() {
                   i
                 ) => (
                   <Grid item xs={12} sm key={i}>
-                    <Fade
-                      in={animate}
-                      style={{ transitionDelay: `${200 * i}ms` }}
-                    >
-                      <Card className={classes.card}>
-                        <CardActionArea
-                          className={classes.cardActionArea}
-                          href={url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <CardHeader
-                            avatar={
-                              <Avatar variant="rounded">
-                                <Image
-                                  alt={`${organization} logo`}
-                                  src={thumbnail}
-                                  layout="fill"
-                                />
-                              </Avatar>
-                            }
-                            title={organization}
-                            subheader={role + " - " + type}
-                          />
-                          <CardHeader
-                            avatar={<DateRange />}
-                            title={getHumanDiff(startDate, endDate)}
-                            subheader={`${startDate} - ${endDate}`}
-                            className={classes.cardHeader}
-                          />
-                          <CardHeader
-                            avatar={<LocationCity />}
-                            subheader={`${city}, ${state}, ${country}`}
-                            className={classes.cardHeader}
-                          />
-                        </CardActionArea>
-                      </Card>
-                    </Fade>
+                    <Card className={classes.card}>
+                      <CardActionArea
+                        className={classes.cardActionArea}
+                        href={url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <CardHeader
+                          avatar={
+                            <Avatar variant="rounded">
+                              <Image
+                                alt={`${organization} logo`}
+                                src={thumbnail}
+                                layout="fill"
+                              />
+                            </Avatar>
+                          }
+                          title={organization}
+                          subheader={role + " - " + type}
+                        />
+                        <CardHeader
+                          avatar={<DateRange />}
+                          title={getHumanDiff(startDate, endDate)}
+                          subheader={`${startDate} - ${endDate}`}
+                          className={classes.cardHeader}
+                        />
+                        <CardHeader
+                          avatar={<LocationCity />}
+                          subheader={`${city}, ${state}, ${country}`}
+                          className={classes.cardHeader}
+                        />
+                      </CardActionArea>
+                    </Card>
                   </Grid>
                 )
               )}
@@ -187,7 +165,6 @@ export default function Experience() {
           </Grid>
         ))}
       </Grid>
-      <div ref={animRef}></div>
     </Grid>
   );
 }
