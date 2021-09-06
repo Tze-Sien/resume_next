@@ -10,7 +10,4 @@ module.exports = withPWA({
   images: {
     domains: ["media-exp1.licdn.com"],
   },
-  env: {
-    PAT: "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",
-  },
 });
