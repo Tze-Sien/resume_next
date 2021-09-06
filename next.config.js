@@ -11,6 +11,6 @@ module.exports = withPWA({
     domains: ["media-exp1.licdn.com"],
   },
   env: {
-    PAT: "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",
+    PAT: "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",
   },
 });
