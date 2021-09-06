@@ -12,6 +12,7 @@ export default class MyDocument extends Document {
           <meta name="theme-color" content="black" />
           <meta property="og:image" content="/cts.jpeg" />
           <meta name="description" content={`Portfolio of ${name}`} />
+          <link rel="manifest" href="/manifest.json" />
           <meta
             name="keywords"
             content={"Portfolio " + name + " skills projects experience resume"}
