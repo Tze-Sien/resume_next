@@ -88,6 +88,23 @@ export default function Experience() {
       spacing={10}
       className={classes.cont}
     >
+      <Grid item xs={12} lg={6}>
+        <Typography variant="h2" gutterBottom align="center">
+          Academics
+        </Typography>
+        <Hidden mdDown>
+          <Fade in={animate} style={{ transitionDelay: "250ms" }}>
+            <div>
+              <Image
+                alt="academic"
+                src="/experience.svg"
+                width="996.46"
+                height="828.18"
+              />
+            </div>
+          </Fade>
+        </Hidden>
+      </Grid>
       <Grid
         container
         item
@@ -169,23 +186,6 @@ export default function Experience() {
             </Grid>
           </Grid>
         ))}
-      </Grid>
-      <Grid item xs={12} lg={6}>
-        <Typography variant="h2" gutterBottom align="center">
-          Academics
-        </Typography>
-        <Hidden mdDown>
-          <Fade in={animate} style={{ transitionDelay: "250ms" }}>
-            <div>
-              <Image
-                alt="academic"
-                src="/experience.svg"
-                width="996.46"
-                height="828.18"
-              />
-            </div>
-          </Fade>
-        </Hidden>
       </Grid>
       <div ref={animRef}></div>
     </Grid>
